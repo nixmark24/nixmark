@@ -10,8 +10,8 @@ export default function WhatsappButton() {
       rel="noopener noreferrer"
       style={{
         position: "fixed",
-        right: "20px",
-        bottom: "20px",
+        right: "30px",
+        bottom: "30px",
         zIndex: 9999,
         display: "flex",
         alignItems: "center",
