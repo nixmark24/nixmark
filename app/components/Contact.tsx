@@ -26,7 +26,7 @@ export default function Contact() {
     emailjs
       .sendForm(
         "service_5mee8tm",
-        "template_ihuxelk",
+        "template_ihuxe1k",
         form.current,
         "1n3NMOzO_26ocFnur"
       )
@@ -49,8 +49,6 @@ export default function Contact() {
     >
       <div className="mx-auto max-w-7xl">
 
-        {/* Heading */}
-
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -72,8 +70,6 @@ export default function Contact() {
         </motion.div>
 
         <div className="mt-20 grid gap-10 lg:grid-cols-2">
-
-          {/* Left Side */}
 
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -136,8 +132,6 @@ export default function Contact() {
             </div>
 
           </motion.div>
-
-          {/* Right Side */}
 
           <motion.form
             ref={form}
@@ -205,7 +199,13 @@ export default function Contact() {
               </button>
 
               {success && (
-                <p className="text-center text-green-400">
+                <p
+                  className={`text-center ${
+                    success.includes("✅")
+                      ? "text-green-400"
+                      : "text-red-400"
+                  }`}
+                >
                   {success}
                 </p>
               )}
