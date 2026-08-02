@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import { FaWhatsapp } from "react-icons/fa";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#050816] pt-32 text-white">
